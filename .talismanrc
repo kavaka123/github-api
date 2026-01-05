@@ -1,0 +1,4 @@
+fileignoreconfig:
+- filename: .github/workflows/github-api.yml
+  checksum: c5f5a8403c68e7d1d393f914e57369e7ca45fd1f80389330b8d89e37aa5209c4
+version: "1.0"
