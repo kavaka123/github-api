@@ -58,6 +58,9 @@ jobs:
   deploy:
     runs-on: self-hosted
     steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
     - name: Deploy to Kubernetes
       run: |
         kubectl apply -f k8s/deployment.yml
+    needs: build
