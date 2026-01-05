@@ -43,10 +43,6 @@ jobs:
       run: |
         make docker/tests
 
-    - name: Build docker image
-      run: |
-        make docker/build
-
     # - name: Scanning docker image for vulnerabilities
     #   uses: aquasecurity/trivy-action@master
     #   with:
@@ -57,4 +53,4 @@ jobs:
       with:
         context: .
         push: true
-        tags: kavaka123/github-api:latest
+        tags: avantaditya/github-api:latest
