@@ -54,3 +54,10 @@ jobs:
         context: .
         push: true
         tags: avantaditya/github-api:latest
+
+  deploy:
+    runs-on: self-hosted
+    steps:
+    - name: Deploy to Kubernetes
+      run: |
+        kubectl apply -f k8s/deployment.yml
